@@ -1,0 +1,58 @@
+<!-- Alyssa Jarrell
+  CIS 228 - JS 2
+  Prof. Liss
+  Spring 2022
+  jnum: J00362041 -->
+
+<!-- Information about project: This is a simple calculator with options for two number inputs and an arithmetic operator. Once two numbers are entered, an operator is chosen, and the "=" (equal sign) button is pressed, the math expression and the answer will display on the page. The "=" button has an event listener attached. When pressed, user input of numbers(2) and operator selection are set to const values. Based on the operator choice, the two number inputs will be passed into one of four arithmetic functions.  Any integer or decimal value can be entered, though the up/down arrows on the input increment/decrement by 1. There is a button to clear the user input. If no options are chosen by user, but the "=" is clicked, the default number is 0 and the default operation is addition. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="index.mjs" type="module"></script>
+</head>
+
+<body class="darkPink">
+	<div id="theme">
+		<p>Theme: <!-- option to change color theme -->
+			<button id="darkPink" class="darkPink">Pink</button>
+			<button id="lightGreen" class="darkPink">Green</button>
+		</p> 
+	</div>
+
+	<div id="container" class="darkPink">
+	<h1 id="title">Calculator</h1>
+	
+		<form id = "form" class="darkPink"> <!-- Calculator form, resets to default on page refresh -->
+
+			<p id="instruction" class="darkPink">Enter two numbers and choose an operator.</p>
+
+			<div id = "inputContainer">
+				<input type="number" id="number1" step = "any" autocomplete = "off" class= "number darkPink"> <!-- first # -->
+
+				
+				<select name = "operation" id="operation" autocomplete = "off" class= "darkPink"> <!-- operator -->
+					<option value = "+">+</option>
+					<option value = "-">-</option>
+					<option value = "*">x</option>
+					<option value = "/">÷</option>
+				</select>
+				
+
+				<input type="number" id="number2" class = "number darkPink" step="any" autocomplete = "off" ><!-- second # -->
+
+				<input type="submit" id="submit" value = "=" class="darkPink"> <!-- submit button -->
+
+
+				<input type = "button" id= "clear" value = "Clear" class= "darkPink"> <!-- clear button -->
+			</div>
+		</form>
+
+		<h2 id = "answerHere" class = "noShow"></h2> <!-- answer shows here when calculation performed -->
+	</div>
+<footer><em>Alyssa Jarrell, JavaScript 2, Prof. Liss, Spring 2022</em></footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+#container{
+    margin-top: 2%;
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: max-content;
+    padding-bottom: 1em;
+}
+
+#container.darkPink {
+    color: rgb(255, 85, 246);
+    border: 2px solid rgb(255, 85, 246);
+}
+
+#container.lightGreen {
+    color: rgb(51, 253, 68);
+    border: 2px solid rgb(51, 253, 68);
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+    height: 600px;
+    position: relative;
+}
+
+body.darkPink {  
+    color: rgb(255, 85, 246);
+}
+
+body.lightGreen {  
+    color: rgb(51, 253, 68);
+}
+
+#instruction {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+p {
+    color: white;
+}
+
+#title {
+    border-bottom: 1px solid;
+    padding-bottom: 0.5em;
+}
+
+form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#inputContainer{
+    display: flex;
+    justify-content: center;
+}
+
+select, input {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: black;
+}
+
+select.darkPink, input.darkPink {
+    border: 2px solid rgb(132, 87, 255);
+}
+
+select.lightGreen, input.lightGreen {
+    border: 2px solid rgb(18, 121, 255);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.number {
+    width: 25%;
+}
+
+#theme {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#darkPink, #lightGreen {
+    background-color: black;
+    margin: 0;
+}
+
+#darkPink {
+    border: 2px solid rgb(132, 87, 255);
+    color: rgb(255, 85, 246);
+}
+
+#lightGreen {
+    border: 2px solid rgb(18, 121, 255);
+    color: rgb(51, 253, 68);
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: rgb(92, 92, 92);
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .number {
+        width: 20%;
+    }
+    select, input {
+        font-size: 1.125em;
+        padding: 10px;
+    }
+  }
+
+@media screen and (max-width: 320px) {
+    .number {
+        width: 10%;
+    }
+    #container{
+        max-width: min-content;
+    }
+    #clear {
+        width: 5%;
+    }
+    select, input {
+        font-size: 0.8em;
+        padding: 0px;
+    }
+  }
+
+  .show {
+      display: block;
+  }
+
+  .noShow {
+      display: none;
+  }
+
+  #answerHere {
+      padding-top: 0.5em;
+  }
